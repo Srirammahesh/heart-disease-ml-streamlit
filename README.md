@@ -69,6 +69,7 @@ Each model exposes a `train_model()` function and is trained using the same trai
 * All evaluation metrics are computed **only on the uploaded test dataset**
 
 This approach simulates a **real-world ML evaluation scenario** using unseen data.
+NOTE: Attached a sample test file `data/heart_test.csv` for uploading and testing purposes of the deployed app.
 
 ---
 
@@ -116,7 +117,7 @@ All UI enhancements are intentionally minimal and aligned with assignment requir
 1. Install required dependencies:
 
 ```
-pip install streamlit scikit-learn pandas numpy matplotlib xgboost
+pip install -r requirements.txt
 ```
 
 2. Run the Streamlit app:
@@ -154,24 +155,6 @@ streamlit run app.py
 | Naive Bayes               | Achieved the highest AUC score, demonstrating excellent probabilistic separation between classes. Despite its strong recall, assumptions of feature independence slightly limited precision and overall accuracy.                               |
 | Random Forest (Ensemble)  | Delivered stable and robust performance with high recall and F1-score. Ensemble learning helped reduce variance compared to a single decision tree, resulting in improved generalization.                                                       |
 | XGBoost (Ensemble)        | Provided competitive performance with high AUC and balanced metrics. While slightly lower in accuracy than Random Forest, it benefits from gradient boosting’s ability to capture complex feature interactions.                                 |
-
-
-## ✅ Compliance With Assignment Instructions
-
-✔ Uses only provided training data for model training
-✔ Testing performed on external uploaded dataset
-✔ Required metrics and confusion matrix included
-✔ No unnecessary models or overengineering
-✔ Clear explanations and visualizations
-
----
-
-## 🧠 Key Learning Outcomes
-
-* Proper ML pipeline separation (training vs testing)
-* Importance of stratification and evaluation metrics
-* Interpretability in healthcare ML problems
-* Building reproducible and explainable ML applications
 
 ---
 
