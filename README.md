@@ -87,16 +87,6 @@ All metrics are calculated using standard `scikit-learn` evaluation functions.
 
 ---
 
-## 🔁 Confusion Matrix Visualization
-
-* A **color-coded confusion matrix** is displayed:
-
-  * 🟢 **Green:** Correct predictions (True Positives, True Negatives)
-  * 🔴 **Red:** Incorrect predictions (False Positives, False Negatives)
-* This visualization improves interpretability and highlights critical medical errors such as **false negatives**.
-
----
-
 ## 📋 Per-Record Prediction Display
 
 For each row in the uploaded test dataset, the app displays:
